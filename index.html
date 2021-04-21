@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <article>
+      <p>Ctrl + Shift + P pour ouvrir la palette de commande</p>
+      <p>et écrire : <span class="important">snippet</span></p>
+      <img src="./1_palette_commande_snippet.jpg" alt="" />
+    </article>
+    <article>
+      <p>sélectionner Nouveau fichier d'extraits globaux...</p>
+      <img src="./2_nouveau-snippet.jpg" alt="" />
+    </article>
+    <article>
+      <p>
+        Lui donner un nom à ce fichier <span class="parenthese">
+          (peut importe le nom, avec ou sans
+          ' <span class="important">.</span>' devant
+        </span>
+      </p>
+      <img src="./3_nommer-le-snippet.jpg" alt="" />
+    </article>
+    <article>
+      <p>
+        Supprimez tout le contenu par défaut de la nouvelle page et
+        copiez/coller la totalité de ces lignes à la place :
+      </p>
+      <pre class="code">
+{
+ ".eslintrc basic settings" : {
+	 "prefix": "!",
+	 "body": [
+"{"
+"	\"env\": {"
+"		\"browser\": true,"
+"		\"es6\": true"
+"	},"
+"	\"extends\": \"eslint:recommended\","
+"	\"rules\": {"
+"		\"indent\": ["
+"			\"error\","
+"			4"
+"		],"
+"		\"quotes\": ["
+"			\"error\","
+"			\"single\""
+"],"
+"		\"semi\": ["
+"			\"error\","
+"			\"always\""
+"		]"
+"	}"
+"}"
+	 ],
+	 "description": ""
+ }
+}</pre
+      >
+    </article>
+    <article>
+      <p>
+        Le resultat final qu'il faut avoir dans le fichier <span class="parenthese">(les commentaires sont juste pour vous indiquer ce que vous pouvez modifier si vous voulez mettre votre propre appelation et raccourcis)</span>
+      </p>
+      <img src="./4_resultat.jpg" alt="" />
+    </article>
+    <article>
+      <p>Il y'a plus qu'à sauvegarder <span class="parenthese">(si auto-save est desactivé)</span> et
+        quitter l'onglet. Puis tester en tapant '<span class="important">!</span>' et selectionner
+        <pre class="result"><span class="important">!           .eslint basic settings</span></pre></p>
+        <img src="./5_result_appel_du_snippet.jpg" alt="">
+    </article>
+  </body>
+</html>
